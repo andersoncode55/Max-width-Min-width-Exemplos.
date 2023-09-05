@@ -1,0 +1,97 @@
+
+
+
+
+/* Exemplo 1: Texto Responsivo */
+p {
+    max-width: 600px; /* Define a largura máxima para o parágrafo */
+    min-width: 300px; /* Define a largura mínima para o parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo na tela */
+}
+
+
+
+
+/* Exemplo 2: Imagens Responsivas */
+img {
+    max-width: 100%; /* A imagem não excederá a largura do contêiner pai */
+    height: auto; /* A altura será ajustada automaticamente proporcionalmente à largura */
+}
+
+
+
+
+/* Exemplo 3: Layout Flexível */
+.container {
+    max-width: 1200px; /* Define a largura máxima do contêiner */
+    min-width: 300px; /* Define a largura mínima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.sidebar {
+    flex-basis: 25%; /* A barra lateral terá no máximo 25% da largura do contêiner */
+    background-color: brown;
+}
+.content {
+    flex-basis: 75%; /* O conteúdo principal terá no máximo 75% da largura do contêiner */
+    background-color: blue;
+}
+
+
+
+
+
+/* Exemplo 4: Botão Responsivo */
+
+.button {
+    padding: 10px 20px; 
+    max-width: 200px; /* Define a largura máxima do botão */
+    min-width: 100px; /* Define a largura mínima do botão */
+}
+
+
+
+
+/* Exemplo 5: Layout Responsivo com Mídias Incorporadas */
+.media-container {
+    max-width: 800px; /* Largura máxima do contêiner de mídia */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+}
+
+iframe, video, audio {
+    max-width: 100%; /* Elementos de mídia não excedem a largura do contêiner pai */
+    height: auto; /* A altura é ajustada automaticamente proporcionalmente à largura */
+
+}
+
+
+
+/* Exemplo 6: Barra de Navegação Responsiva  */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    max-width: 100%; /* Barra de navegação não excederá a largura do contêiner pai */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    /* Estilos para telas menores que 600px de largura */
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
