@@ -1,4 +1,4 @@
-<h1 align="center"> Max-width-Min-width-Exemplos. </h1>
+<h1 align="center"> Max-width-Min-width-Exemplos </h1>
 
 ## 🔗 Índice
 * [🎯 Objetivo](#-objetivo)
